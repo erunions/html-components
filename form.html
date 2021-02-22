@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+        <style>
+            ::placeholder {
+              color: darkblue;
+              opacity: 1; /* Firefox */
+            }
+        </style>
+    </head>
+    <body style="background-color:plum; text-align:center; font-family: Lucida Console, Courier New, monospace; color:purple;">
+        <h1>Form</h1>
+        <form method="get">
+            <label for="address">Address:</label>
+            <input type="text" name="address" placeholder="123 Main Street" size="30" maxlength="100" id="address" style="background-color:paleturquoise;"/>
+
+            </br>
+            <label for="postal">Postal Code:</label>
+            <input type="text" name="postal" placeholder="A1A 1A1" size="15" maxlength="7" id="postal" style="background-color:paleturquoise;"/>
+
+            </br>
+            <label for="city">City:</label>
+            <input type="text" name="city" placeholder="NY" size="2" maxlength="2" id="city" style="background-color:paleturquoise;"/>
+
+            </br>
+            <label for="shipping">Select a Shipping Method:</label>
+            <select name="shipping" id="shipping" style="background-color:paleturquoise; color: darkblue">
+            <option value="standard" style="background-color:paleturquoise; color: darkblue">Standard Shipping</option>
+            <option value="oneday" style="background-color:paleturquoise; color: darkblue">One-Day Shipping</option>
+            <option value="twoday" style="background-color:paleturquoise; color: darkblue">Two-Day Shipping</option>
+            </select>
+
+            <p>Select a Payment Method:</p>
+            <label><input type="radio" name="payment" value="paypal" checked="true">PayPal</label>
+            <label><input type="radio" name="payment" value="debit">Debit Card</label>
+            <label><input type="radio" name="payment" value="credit">Credit Card</label>
+
+            </br>
+            <p>Comments:</p>
+            <textarea id="comments" name="comments" rows="4" cols="40" placeholder="I'm allergic to packing peanuts" style="background-color:paleturquoise; color:darkblue;"></textarea>
+
+            </br>
+            </br>
+            <label><input type="checkbox" name="emailupdates" checked="true">Sign me up for e-mail updates</label>
+            <label><input type="checkbox" name="savepayment" checked="true">Save my payment information</label>
+
+            </br>
+            </br>
+            <input type="submit" value="Submit!" style="background-color:paleturquoise;">
+        </form>
+    </body>
+</html>
